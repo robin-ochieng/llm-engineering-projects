@@ -17,7 +17,14 @@ from urllib.parse import urljoin, urlparse
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
-from IPython.display import Markdown, display
+# Make IPython optional in non-notebook environments
+try:
+    from IPython.display import Markdown, display  # type: ignore
+except Exception:  # pragma: no cover - optional dependency
+    def display(x):  # minimal fallback
+        print(str(x))
+    class Markdown(str):
+        pass
 from openai import OpenAI
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
