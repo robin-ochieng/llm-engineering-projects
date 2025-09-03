@@ -1,4 +1,4 @@
-# Tender Intelligence Platform
+# Large Language Model Engineering
 
 Automated web scraping pipeline to discover, extract, and normalize public tender opportunities into actionable insights.
 
