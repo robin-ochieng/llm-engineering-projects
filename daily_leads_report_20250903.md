@@ -1,0 +1,1 @@
+No tender opportunities found in the specified period.
