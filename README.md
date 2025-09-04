@@ -61,6 +61,31 @@ python Tender_Intelligence_Platform.py
 
 Optional flags can be added in the script for headless mode, output paths, etc.
 
+## Run the Shiny dashboard (optional)
+
+You can use a web UI to run scans and explore results.
+
+1) Activate venv and install deps
+
+```powershell
+. .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+2) Set environment
+
+```powershell
+Copy-Item .env.example .env  # then edit OPENAI_API_KEY
+```
+
+3) Launch the app
+
+```powershell
+python app.py
+```
+
+The app will start on http://localhost:8000 by default.
+
 ## Development Notes
 - Keep secrets out of source control; use `.env` only locally
 - Add new sources by extending the scraping functions

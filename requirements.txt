@@ -7,3 +7,5 @@ beautifulsoup4
 webdriver-manager
 openai
 ipython
+shiny
+shinyswatch
